@@ -24,3 +24,13 @@ AppRegistry.registerComponent('MovieTalk', () => App);
 
 # 导航
 我在做项目的时候想使用导航，但发现安卓和苹果不能没有一个可以公用的组件，在官网上找到了 `react-navigation`。我把这块的内容单独的放在了 `app/Navigator` 下，你也可以直接参照 `TabNavigatorDemo.js` 做出一个导航菜单。
+
+# 使用 http
+如果你想在 ios 设备上使用 http 来访问接口，可以给 `ios/Info.plist` 这个文件的 `dist` 标签添加下面的内容：
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+```
