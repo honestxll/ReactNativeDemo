@@ -6,6 +6,7 @@ import { AppRegistry } from 'react-native';
 // import App from './app/Components/FlatList';
 // import App from './app/Components/USBox';
 // import App from './app/Navigator/ReactNavigationDemo';
-import App from './app/Navigator/TabNavigatorDemo';
+// import App from './app/Navigator/TabNavigatorDemo';
+import App from './app/Components/Carousel';
 
 AppRegistry.registerComponent('MovieTalk', () => App);
